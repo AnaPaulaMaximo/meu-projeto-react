@@ -1,14 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+  --verde-brasil: #009c3b;
+  --amarelo-brasil: #ffdf00;
+  --azul-brasil: #002776;
+  --fundo-claro: #f4f7f6;
+  --texto-principal: #2d3436;
+  --texto-secundario: #636e72;
+  --branco: #ffffff;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #f9f9f6;
-  color: #2c3e50;
+  background-color: var(--fundo-claro);
+  color: var(--texto-principal);
+  line-height: 1.6;
 }
 
 .header {
@@ -48,20 +61,24 @@ body {
 
 .hero {
   text-align: center;
-  padding: 5rem 1rem;
-  background: linear-gradient(135deg, #009c3b 0%, #ffdf00 100%);
-  color: #002776;
+  padding: 8rem 1rem;
+  background: linear-gradient(135deg, rgba(0, 156, 59, 0.85) 0%, rgba(255, 223, 0, 0.85) 100%), 
+              url('https://images.unsplash.com/photo-1518605368461-1eb5b2521bc1?q=80&w=2000&auto=format&fit=crop') center/cover fixed;
+  color: var(--branco);
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .hero p {
   font-size: 1.25rem;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
+  font-weight: 300;
 }
 
 .section {
@@ -84,19 +101,30 @@ body {
 }
 
 .card {
-  background: white;
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-left: 5px solid #ffdf00;
+  background: var(--branco);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-bottom: 4px solid var(--amarelo-brasil);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
-  margin-bottom: 0.5rem;
-  color: #002776;
+  margin-bottom: 0.8rem;
+  color: var(--azul-brasil);
+}
+
+.card p {
+  color: var(--texto-secundario);
+  margin-bottom: 1.5rem;
 }
 
 .gastronomia {
@@ -129,18 +157,20 @@ body {
 }
 
 .like-button {
-  margin-top: 1rem;
-  padding: 0.4rem 0.8rem;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 0.6rem 1.2rem;
+  background-color: transparent;
+  color: var(--verde-brasil);
+  border: 2px solid var(--verde-brasil);
+  border-radius: 20px;
+  font-weight: 600;
   cursor: pointer;
   align-self: flex-start;
-  transition: background 0.2s;
+  transition: all 0.3s ease;
 }
 
 .like-button:hover {
-  background-color: #e0e0e0;
+  background-color: var(--verde-brasil);
+  color: var(--branco);
 }
 
 .footer {
