@@ -31,10 +31,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 2rem;
-  background-color: #009c3b;
-  color: white;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 1.2rem 4rem;
+  background: rgba(0, 156, 59, 0.9);
+  backdrop-filter: blur(10px); /* Glassmorphism */
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--branco);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .logo {
@@ -45,14 +47,31 @@ body {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .nav-links a {
-  color: white;
+  color: var(--branco);
   text-decoration: none;
-  font-weight: 600;
-  transition: opacity 0.2s;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--amarelo-brasil);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
 }
 
 .nav-links a:hover {
@@ -175,8 +194,9 @@ body {
 
 .footer {
   text-align: center;
-  padding: 2rem;
-  background-color: #002776;
-  color: white;
-  margin-top: 3rem;
+  padding: 3rem 2rem;
+  background-color: var(--azul-brasil);
+  color: var(--branco);
+  margin-top: 4rem;
+  border-top: 5px solid var(--verde-brasil);
 }
