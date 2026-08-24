@@ -85,3 +85,13 @@ body {
   margin-bottom: 0.5rem;
   color: #002776;
 }
+.gastronomia {
+  background-color: #fff9e6;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  margin: 2rem auto;
+}
+
+.gastronomia-card {
+  border-left-color: #009c3b;
+}
