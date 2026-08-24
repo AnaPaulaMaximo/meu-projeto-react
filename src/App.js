@@ -15,6 +15,12 @@ function App() {
     { id: 4, nome: "Tacacá", regiao: "Norte", desc: "Iguaria amazônica preparada com tucupi, goma de mandioca e jambu." }
   ];
 
+  const folcloreEArte = [
+    { id: 1, titulo: "Capoeira", desc: "Expressão cultural que mistura arte marcial, esporte, cultura popular, dança e música." },
+    { id: 2, titulo: "Literatura de Cordel", desc: "Poesia popular impressa em folhetos ilustrados com xilogravura." },
+    { id: 3, titulo: "Mitos e Lendas", desc: "Saci-Pererê, Curupira, Iara e Boto Cor-de-Rosa povoam o imaginário popular." }
+  ];
+
   return (
     <div className="App">
       <header className="header">
@@ -24,6 +30,7 @@ function App() {
             <li><a href="#hero">Início</a></li>
             <li><a href="#festas">Festas & Ritmos</a></li>
             <li><a href="#gastronomia">Culinária</a></li>
+            <li><a href="#folclore">Arte & Folclore</a></li>
           </ul>
         </nav>
       </header>
@@ -52,6 +59,18 @@ function App() {
             <div key={prato.id} className="card gastronomia-card">
               <h3>{prato.nome} <small>({prato.regiao})</small></h3>
               <p>{prato.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="folclore" className="section">
+        <h2 className="section-title">Arte, Lendas & Tradições</h2>
+        <div className="folclore-list">
+          {folcloreEArte.map((item) => (
+            <div key={item.id} className="folclore-item">
+              <h4>{item.titulo}</h4>
+              <p>{item.desc}</p>
             </div>
           ))}
         </div>
