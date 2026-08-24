@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# 🇧🇷 Brasil Plural - Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Uma landing page interativa e moderna desenvolvida em React puro para celebrar a riqueza e a diversidade da cultura brasileira. O projeto explora festas, ritmos, gastronomia e folclore de forma visualmente atraente.
 
-## Available Scripts
+## 🚀 Funcionalidades
 
-In the project directory, you can run:
+- **Design Moderno:** Interface rica com tipografia personalizada (Google Fonts), soft shadows e glassmorphism.
+- **Responsividade:** Layout adaptável para dispositivos móveis, tablets e desktops.
+- **Interatividade:** Botões de "Curtir" dinâmicos utilizando estados (`useState`) do React.
+- **Animações:** Transições suaves e animações de entrada para melhorar a experiência do usuário.
 
-### `npm start`
+## 🛠️ Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React (Vite / CRA):** Biblioteca principal para componentização e interface.
+- **JSX:** Sintaxe declarativa para estruturação dos componentes.
+- **CSS3 (Puro):** Estilização customizada usando Variáveis CSS (`:root`), Flexbox, Grid e Keyframes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Como rodar o projeto localmente
 
-### `npm test`
+1. **Clone este repositório:**
+   ```bash
+   git clone [https://github.com/seu-usuario/brasil-plural.git](https://github.com/seu-usuario/brasil-plural.git)
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Acesse a pasta do projeto:**
+   ```bash
+   cd brasil-plural
+   ```
 
-### `npm run build`
+3. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. **Acesse no navegador:**
+   Abra `http://localhost:5173` (Vite) ou `http://localhost:3000` (CRA).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 💡 Próximos Passos (Roadmap)
 
-### `npm run eject`
+- [ ] Dividir a aplicação em múltiplos arquivos de componentes (`Header.jsx`, `Hero.jsx`, `Card.jsx`, etc).
+- [ ] Adicionar um botão de "Voltar ao topo".
+- [ ] Integrar com uma API de imagens para carregar fotos dinâmicas de cada região.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+Feito com 💚 e 💛 celebrando a cultura do Brasil!
